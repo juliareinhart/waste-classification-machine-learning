@@ -1,4 +1,4 @@
-# 🌸 RealWaste Classification: Machine Learning for Waste Sorting
+# 🌸 ♻️ RealWaste Classification: Machine Learning for Waste Sorting
 
 ## Overview
 
