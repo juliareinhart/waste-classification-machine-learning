@@ -78,7 +78,7 @@ Waste that does not clearly belong to cardboard, food organics, glass, metal, pa
 
 ## Repository Structure
 
-````text
+```text
 Model-1-MobileNet/
     README.md
     notebooks/
@@ -110,10 +110,11 @@ README.md
 ## How to Run This Project
 
 ### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/juliareinhart/waste-classification-machine-learning.git
 cd waste-classification-machine-learning
-````
+```
 
 ### 2. Create a Python Environment
 
