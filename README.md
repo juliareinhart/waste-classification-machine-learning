@@ -81,32 +81,31 @@ Waste that does not clearly belong to cardboard, food organics, glass, metal, pa
 ## Repository Structure
 
 ```text
-Model-1-MobileNet/
-    README.md
-    notebooks/
-    results/
-
-Model-2-EfficientNetB0/
-    README.md
-    notebooks/
-    results/
-
-Model-3-GoogleNet/
-    README.md
-    notebooks/
-    results/
-
-Model-4-YOLOv8-Classification/
-    README.md
-    notebooks/
-    results/
-
-Model-5-YOLOv8-Detection/
-    README.md
-    notebooks/
-    results/
-
-README.md
+waste-classification-machine-learning/
+│
+├── README.md
+│
+├── Model 1 CNN/
+│   ├── models/
+│   │   ├── best_googlenet_realwaste.pth
+│   │   ├── efficientnet_b0_realwaste.pth
+│   │   └── mobilenetv3_realwaste.pth
+│   │
+│   ├── requirements.txt
+│   └── waste_classification.ipynb
+│
+├── Model 2 YOLO Classification/
+│   ├── PyTorch_YOLOv8n_hp_baseline.ipynb
+│   ├── PyTorch_YOLOv8n_hp_with_stratified_split.ipynb
+│   ├── PyTorch_YOLOv8n_hp_with_stratified_split_combined_with_data_augmentation.ipynb
+│   └── PyTorch_YOLOv8n_hp_with_stratified_split_freeze.ipynb
+│
+├── Model 3 YOLO Detection/
+│   └── PyTorch_YOLOv8n_hp_data.ipynb
+│
+├── WasteClassificationReport.pdf
+│
+└── .gitignore
 ```
 
 ## How to Run This Project
@@ -153,13 +152,13 @@ Results include accuracy scores, training curves, confusion matrices, and normal
 
 Add final results here:
 
-| Model                 |      Accuracy | Notes        |
-| --------------------- | ------------: | ------------ |
-| MobileNet             | Insert result | Insert notes |
-| EfficientNetB0        | Insert result | Insert notes |
-| GoogleNet             | Insert result | Insert notes |
-| YOLOv8 Classification | Insert result | Insert notes |
-| YOLOv8 Detection      | Insert result | Insert notes |
+| Model Name        | Task Type                            | GFLOPS | Training Time | Top 5 Accuracy | Top 1 Accuracy |
+| ----------------- | ------------------------------------ | -----: | ------------- | -------------: | -------------: |
+| YOLOv8n-cls       | Classification                       |   12.5 | < 1 hour      |         99.72% |         90.18% |
+| YOLOv8n Detection | Object Detection (Box Labels Needed) |   28.8 | ~ 3 hours     |            N/A |          89.2% |
+| GoogleNet         | Classification                       |    1.5 | < 1 hour      |         97.79% |         87.39% |
+| MobileNetV3       | Classification                       |   0.06 | < 1 hour      |         99.37% |         86.13% |
+| EfficientNetB0    | Classification                       |   0.39 | < 1 hour      |         99.58% |         77.52% |
 
 ---
 
