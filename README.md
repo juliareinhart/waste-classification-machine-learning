@@ -8,7 +8,7 @@ This was completed as a group project for Applied Machine Learning.
 
 ## 🎥 Demo Video
 
-YouTube Demo: [Insert YouTube Demo Link Here]
+YouTube Demo: [\[https://youtu.be/y1gl1z02Ww0\]]
 
 ## 👥 Team Project
 
